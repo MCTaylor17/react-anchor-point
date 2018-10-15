@@ -105,7 +105,7 @@ You can access these methods by exposing them through the `ref` attribute like s
 <AnchorPoint ref={(reactAnchor) => { window.reactAnchor = reactAnchor}}>
   <Main/>
 </AnchorPoint>
-<button onClick={() => reactAnchor.toggleDebug()}>Toggle Debugging</button>
+<button onClick={() => reactAnchor.toggleDebugging()}>Toggle Debugging</button>
 ```
 
 Once exposed, you can also call the methods directly from the console.
