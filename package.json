@@ -1,0 +1,39 @@
+{
+  "name": "react-anchor-point",
+  "version": "0.1.0",
+  "description": "AnchorPoint is a simple react component that will help your users stay oriented with the content on your page",
+  "main": "./build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MCTaylor17/react-anchor-point.git"
+  },
+  "author": "Mike C. Taylor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MCTaylor17/react-anchor-point/issues"
+  },
+  "homepage": "https://github.com/MCTaylor17/react-anchor-point#readme",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "prop-types": "^15.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "peerDependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "prop-types": "^15.6.2"
+  }
+}
