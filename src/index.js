@@ -93,7 +93,7 @@ img.${this.props.debugAnchorClass} {
   }
   
   removeHighlighting() {
-    if(this.anchor.element) {
+    if(this.state.debug && this.anchor.element) {
       this.anchor.element.classList.remove(this.props.debugAnchorClass);
     }
   }
