@@ -1,6 +1,6 @@
 {
   "name": "react-anchor-point",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "AnchorPoint is a simple react component that will help your users stay oriented with the content on your page",
   "main": "./build/index.js",
   "scripts": {
