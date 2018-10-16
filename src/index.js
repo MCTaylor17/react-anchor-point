@@ -212,10 +212,6 @@ img.${this.props.debugAnchorClass} {
     }
   }
   
-  test() {
-    console.log("Nothing");
-  }
-  
   render() {
     if(this.reRender) {
       // new anchor required after render
