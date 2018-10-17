@@ -8,6 +8,7 @@ class AnchorPoint extends React.Component {
     this.state = {
       debug: this.props.debug
     };
+    this.prevWindowWidth = 0;
     this.reRender = false;
     this.disabled = this.props.disabled,
     this.anchor = {
@@ -53,6 +54,13 @@ img.${this.props.debugAnchorClass} {
     if(this.disabled) {
       return false;
     }
+    
+    let currentWindowWidth = window.innerWidth;
+    if(this.prevWindowWidth === currentWindowWidth) {
+      return false; // Ignore vertical resize
+    }
+    
+    this.prevWindowWidth = currentWindowWidth;
     
     if(this.anchor.element) {
       // Updates scroll position to maintain a constant distance between the
